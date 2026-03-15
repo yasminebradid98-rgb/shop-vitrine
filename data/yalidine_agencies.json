@@ -1,0 +1,694 @@
+[
+  {
+    "Wilaya": "Adrar",
+    "Nom": "Agence de Adrar [Yalidine]"
+  },
+  {
+    "Wilaya": "Adrar",
+    "Nom": "Agence El Hataba Adrar [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Chlef",
+    "Nom": "Agence de Chlef [Yalidine]"
+  },
+  {
+    "Wilaya": "Chlef",
+    "Nom": "Agence de Chlef [Guepex]"
+  },
+  {
+    "Wilaya": "Chlef",
+    "Nom": "Agence Hay El Nasr [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Chlef",
+    "Nom": "Agence de Ténès [Guepex]"
+  },
+  {
+    "Wilaya": "Laghouat",
+    "Nom": "Agence de Aflou [Yalidine]"
+  },
+  {
+    "Wilaya": "Laghouat",
+    "Nom": "Agence Laghouat (Cité OASIS) [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Oum El Bouaghi",
+    "Nom": "Agence de Aïn M'lila [Yalidine]"
+  },
+  {
+    "Wilaya": "Oum El Bouaghi",
+    "Nom": "Agence de Oum el Bouaghi [Yalidine]"
+  },
+  {
+    "Wilaya": "Batna",
+    "Nom": "Agence de Barika [Guepex]"
+  },
+  {
+    "Wilaya": "Batna",
+    "Nom": "Agence des 500 Logements [Yalidine]"
+  },
+  {
+    "Wilaya": "Batna",
+    "Nom": "Agence du CHU Route de Tazoult [Guepex]"
+  },
+  {
+    "Wilaya": "Béjaïa",
+    "Nom": "Agence de Akbou [Yalidine]"
+  },
+  {
+    "Wilaya": "Béjaïa",
+    "Nom": "Agence de Béjaïa (Cité Tobal) [Guepex]"
+  },
+  {
+    "Wilaya": "Béjaïa",
+    "Nom": "Agence de Béjaïa (Edimco) [Yalidine]"
+  },
+  {
+    "Wilaya": "Béjaïa",
+    "Nom": "Agence de El Kseur [Guepex]"
+  },
+  {
+    "Wilaya": "Biskra",
+    "Nom": "Agence de Biskra (Zone Ouest) [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Biskra",
+    "Nom": "Agence El Kantara [Yalidine]"
+  },
+  {
+    "Wilaya": "Biskra",
+    "Nom": "Agence de Tolga [Guepex]"
+  },
+  {
+    "Wilaya": "Béchar",
+    "Nom": "Agence de Béchar (Centre Ville) [Yalidine]"
+  },
+  {
+    "Wilaya": "Béchar",
+    "Nom": "Agence Béchar (Cité Es Salam) [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Blida",
+    "Nom": "Agence de Blida [Yalidine]"
+  },
+  {
+    "Wilaya": "Blida",
+    "Nom": "Agence de Bab Dzair [Guepex]"
+  },
+  {
+    "Wilaya": "Blida",
+    "Nom": "Agence de Boufarik [Guepex]"
+  },
+  {
+    "Wilaya": "Blida",
+    "Nom": "Agence de Larbaa [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Blida",
+    "Nom": "Agence Mouzaia Blida [Guepex]"
+  },
+  {
+    "Wilaya": "Blida",
+    "Nom": "Agence Ouled Yaich [Yalidine]"
+  },
+  {
+    "Wilaya": "Bouira",
+    "Nom": "Agence Ain Bessem [Guepex]"
+  },
+  {
+    "Wilaya": "Bouira",
+    "Nom": "Agence de Bouira [Yalidine]"
+  },
+  {
+    "Wilaya": "Bouira",
+    "Nom": "Agence de Lakhdaria [Yalidine]"
+  },
+  {
+    "Wilaya": "Bouira",
+    "Nom": "Agence de Sour El Ghouzlane [Guepex]"
+  },
+  {
+    "Wilaya": "Tamanrasset",
+    "Nom": "Agence de Tamanrasset (Gataâ El Oued) [Guepex]"
+  },
+  {
+    "Wilaya": "Tamanrasset",
+    "Nom": "Agence Tamanrasset (Tahaggart) [Yalidine]"
+  },
+  {
+    "Wilaya": "Tamanrasset",
+    "Nom": "Agence Tamanrasset (Sorro Ivolutif) [Easy&Speed]"
+  },
+  {
+    "Wilaya": "Tébessa",
+    "Nom": "Agence Cheria (Tébessa) [Guepex]"
+  },
+  {
+    "Wilaya": "Tébessa",
+    "Nom": "Agence de Tébessa [Yalidine]"
+  },
+  {
+    "Wilaya": "Tébessa",
+    "Nom": "Centre de tri Skanska (Tébessa) [Yalidine]"
+  },
+  {
+    "Wilaya": "Tlemcen",
+    "Nom": "Agence Chetouane [Yalidine]"
+  },
+  {
+    "Wilaya": "Tlemcen",
+    "Nom": "Agence de Maghnia [Yalidine]"
+  },
+  {
+    "Wilaya": "Tlemcen",
+    "Nom": "Agence Remchi [Yalidine]"
+  },
+  {
+    "Wilaya": "Tlemcen",
+    "Nom": "Agence de Tlemcen (Bel-Air) [Guepex]"
+  },
+  {
+    "Wilaya": "Tlemcen",
+    "Nom": "Agence de Tlemcen (Mansourah) [Yalidine]"
+  },
+  {
+    "Wilaya": "Tiaret",
+    "Nom": "Agence de Tiaret [Yalidine]"
+  },
+  {
+    "Wilaya": "Tizi Ouzou",
+    "Nom": "Agence de Azazga [Yalidine]"
+  },
+  {
+    "Wilaya": "Tizi Ouzou",
+    "Nom": "Agence Beni Douala [Yalidine]"
+  },
+  {
+    "Wilaya": "Tizi Ouzou",
+    "Nom": "Agence de Draâ Ben Khedda [Guepex]"
+  },
+  {
+    "Wilaya": "Tizi Ouzou",
+    "Nom": "Agence de Tizi Gheniff [Guepex]"
+  },
+  {
+    "Wilaya": "Tizi Ouzou",
+    "Nom": "Agence de Bekkar [Guepex]"
+  },
+  {
+    "Wilaya": "Tizi Ouzou",
+    "Nom": "Agence de Nouvelle Ville [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Aïn Benian [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Sacré-Cœur [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Bab El Oued [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Bab Ezzouar [Yalitec]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Bachdjerrah [WeCanServices]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Baraki [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Bir Mourad Rais [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Birkhadem [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Birtouta [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Bordj El Bahri (Café Chergui) [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Bordj El Kiffan [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Dar Diaf [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "HUB Cheraga (Plateau) [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence d'El Hamiz [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Gué de Constantine [SpeedMail]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Draria [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Hussein Dey [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Kouba [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence Les Eucalyptus [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Sidi Abdellah [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence les Pins Maritime [Yalitec]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence El Harrach (Beaulieu) [WeCanServices]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Ouled Fayet [Guepex]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de DNC [Yalidine]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Rouiba [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Alger",
+    "Nom": "Agence de Zeralda [Guepex]"
+  },
+  {
+    "Wilaya": "Djelfa",
+    "Nom": "Agence de Aïn Oussara [Yalidine]"
+  },
+  {
+    "Wilaya": "Djelfa",
+    "Nom": "Agence de Djelfa [Yalidine]"
+  },
+  {
+    "Wilaya": "Jijel",
+    "Nom": "Agence de El Milia [Guepex]"
+  },
+  {
+    "Wilaya": "Jijel",
+    "Nom": "Agence de Jijel [Yalidine]"
+  },
+  {
+    "Wilaya": "Jijel",
+    "Nom": "Agence Kaous (Jijel) [Yalidine]"
+  },
+  {
+    "Wilaya": "Jijel",
+    "Nom": "Agence de Taher [Guepex]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Agence de Aïn Oulmene [Guepex]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Agence de Bougaa [Guepex]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Desk El Eulma [Yalidine]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Agence El Eulma (Cité Sonatrach Smara S) [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Agence Maabouda [Yalidine]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Agence El Hidhab [Guepex]"
+  },
+  {
+    "Wilaya": "Sétif",
+    "Nom": "Agence Centre ville [Guepex]"
+  },
+  {
+    "Wilaya": "Saïda",
+    "Nom": "Agence de Saïda [Yalidine]"
+  },
+  {
+    "Wilaya": "Skikda",
+    "Nom": "Agence de Azzaba [Guepex]"
+  },
+  {
+    "Wilaya": "Skikda",
+    "Nom": "Agence de Collo [Guepex]"
+  },
+  {
+    "Wilaya": "Skikda",
+    "Nom": "Agence de El Harrouch [Guepex]"
+  },
+  {
+    "Wilaya": "Skikda",
+    "Nom": "Centre de tri et Agence Messiouen (Skikda) [Yalidine]"
+  },
+  {
+    "Wilaya": "Skikda",
+    "Nom": "Nouvelle Agence Skikda L'espérance [Yalidine]"
+  },
+  {
+    "Wilaya": "Skikda",
+    "Nom": "Agence de Skikda Faubourg [Guepex]"
+  },
+  {
+    "Wilaya": "Sidi Bel Abbès",
+    "Nom": "Agence Sidi Bel Abbès [Yalidine]"
+  },
+  {
+    "Wilaya": "Sidi Bel Abbès",
+    "Nom": "Agence Sidi Bel Abbès (Benhamouda) [Guepex]"
+  },
+  {
+    "Wilaya": "Annaba",
+    "Nom": "Agence de Valmascort [Yalidine]"
+  },
+  {
+    "Wilaya": "Annaba",
+    "Nom": "Agence de Sidi Brahim [Guepex]"
+  },
+  {
+    "Wilaya": "Annaba",
+    "Nom": "Agence Sidi Achour [GHANZOH Express By Yalidine]"
+  },
+  {
+    "Wilaya": "Annaba",
+    "Nom": "Agence de El Bouni [Guepex]"
+  },
+  {
+    "Wilaya": "Guelma",
+    "Nom": "Nouvelle Agence Guelma [Yalidine]"
+  },
+  {
+    "Wilaya": "Guelma",
+    "Nom": "Agence de Oued Zenati [Guepex]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence Belle Vue [Yalidine]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence Sidi Mabrouk [Guepex]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence de Constantine (Zouaghi) [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence de Didouche Mourad [Yalidine]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence d'El Khroub [Guepex]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence Nouvelle ville Ali Mendjeli [Yalidine]"
+  },
+  {
+    "Wilaya": "Constantine",
+    "Nom": "Agence Nouvelle Ville [Guepex]"
+  },
+  {
+    "Wilaya": "Médéa",
+    "Nom": "Agence Médéa (Beni Slimane) [Yalidine]"
+  },
+  {
+    "Wilaya": "Médéa",
+    "Nom": "Agence de Médéa (El Koutab) [Yalidine]"
+  },
+  {
+    "Wilaya": "Médéa",
+    "Nom": "Agence de Médéa (Pole Urbain) [Guepex]"
+  },
+  {
+    "Wilaya": "Médéa",
+    "Nom": "Agence Tablat [Yalidine]"
+  },
+  {
+    "Wilaya": "Mostaganem",
+    "Nom": "Salamandre [Yalidine]"
+  },
+  {
+    "Wilaya": "Mostaganem",
+    "Nom": "Kharouba [Guepex]"
+  },
+  {
+    "Wilaya": "M'Sila",
+    "Nom": "Agence de Berhoum [Guepex]"
+  },
+  {
+    "Wilaya": "M'Sila",
+    "Nom": "Agence de Bou Saâda [Yalidine]"
+  },
+  {
+    "Wilaya": "M'Sila",
+    "Nom": "Agence Salem Shopping Mall [Yalidine]"
+  },
+  {
+    "Wilaya": "M'Sila",
+    "Nom": "Agence Sidi Aïssa [Guepex]"
+  },
+  {
+    "Wilaya": "Mascara",
+    "Nom": "Agence de Mascara [Yalidine]"
+  },
+  {
+    "Wilaya": "Ouargla",
+    "Nom": "Agence de Hassi Messaoud [Yalidine]"
+  },
+  {
+    "Wilaya": "Ouargla",
+    "Nom": "Agence de Ouargla Centre Ville [Guepex]"
+  },
+  {
+    "Wilaya": "Ouargla",
+    "Nom": "Agence de Ouargla (Chetti el Wekal) [Yalidine]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "Agence de Arzew [Guepex]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "El Morchid [Yalidine]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "Agence Fernand Ville [Yalidine]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "Agence ILAF Belkaïd Oran [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "Cité Djamel [Guepex]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "Agence de Gambetta [Zimou-Express]"
+  },
+  {
+    "Wilaya": "Oran",
+    "Nom": "Agence Canastel [SpeedMail]"
+  },
+  {
+    "Wilaya": "El Bayadh",
+    "Nom": "Agence de El Bayadh [Yalidine]"
+  },
+  {
+    "Wilaya": "Illizi",
+    "Nom": "Agence de Illizi [Guepex]"
+  },
+  {
+    "Wilaya": "Illizi",
+    "Nom": "Agence In Amenas [Guepex]"
+  },
+  {
+    "Wilaya": "Bordj Bou Arreridj",
+    "Nom": "Agence BBA [Yalidine]"
+  },
+  {
+    "Wilaya": "Bordj Bou Arreridj",
+    "Nom": "Agence BBA Nouveau Lycée [Guepex]"
+  },
+  {
+    "Wilaya": "Boumerdès",
+    "Nom": "Agence de Bordj Menaiel [Guepex]"
+  },
+  {
+    "Wilaya": "Boumerdès",
+    "Nom": "Agence Boudouaou [Guepex]"
+  },
+  {
+    "Wilaya": "Boumerdès",
+    "Nom": "Agence de Boumerdès [Yalidine]"
+  },
+  {
+    "Wilaya": "Boumerdès",
+    "Nom": "Agence Hammedi [WeCanServices]"
+  },
+  {
+    "Wilaya": "El Tarf",
+    "Nom": "Agence Dréan El Tarf [Yalidine]"
+  },
+  {
+    "Wilaya": "El Tarf",
+    "Nom": "Agence de El Tarf [Yalidine]"
+  },
+  {
+    "Wilaya": "Tindouf",
+    "Nom": "Agence de Tindouf [Yalidine]"
+  },
+  {
+    "Wilaya": "Tissemsilt",
+    "Nom": "Agence de Tissemsilt [Yalidine]"
+  },
+  {
+    "Wilaya": "El Oued",
+    "Nom": "Agence de El Oued [Yalidine]"
+  },
+  {
+    "Wilaya": "Khenchela",
+    "Nom": "Agence Route de Meskiana [Yalidine]"
+  },
+  {
+    "Wilaya": "Souk Ahras",
+    "Nom": "Agence de Souk Ahras [Yalidine]"
+  },
+  {
+    "Wilaya": "Tipaza",
+    "Nom": "Agence Cherchell [Guepex]"
+  },
+  {
+    "Wilaya": "Tipaza",
+    "Nom": "Agence Hadjout (Rue de stade) [EasyAndSpeed]"
+  },
+  {
+    "Wilaya": "Tipaza",
+    "Nom": "Agence Koléa [Guepex]"
+  },
+  {
+    "Wilaya": "Tipaza",
+    "Nom": "Agence Tipaza [Yalidine]"
+  },
+  {
+    "Wilaya": "Mila",
+    "Nom": "Agence de Chelghoum Laid [Yalidine]"
+  },
+  {
+    "Wilaya": "Mila",
+    "Nom": "Agence Ferdjioua [Guepex]"
+  },
+  {
+    "Wilaya": "Mila",
+    "Nom": "Centre de tri Mila [Yalidine]"
+  },
+  {
+    "Wilaya": "Mila",
+    "Nom": "Agence de Mila [Yalidine]"
+  },
+  {
+    "Wilaya": "Aïn Defla",
+    "Nom": "Agence de Aïn Defla [Guepex]"
+  },
+  {
+    "Wilaya": "Aïn Defla",
+    "Nom": "Agence de Khemis Miliana [Guepex]"
+  },
+  {
+    "Wilaya": "Naâma",
+    "Nom": "Agence de Mecheria [Guepex]"
+  },
+  {
+    "Wilaya": "Aïn Témouchent",
+    "Nom": "Agence de Aïn Témouchent [Yalidine]"
+  },
+  {
+    "Wilaya": "Aïn Témouchent",
+    "Nom": "Agence de Beni Saf [Guepex]"
+  },
+  {
+    "Wilaya": "Ghardaïa",
+    "Nom": "Agence Bounoura (Ghardaia) [SpeedMail]"
+  },
+  {
+    "Wilaya": "Ghardaïa",
+    "Nom": "Agence de Thenia (Ghardaïa) [Guepex]"
+  },
+  {
+    "Wilaya": "Ghardaïa",
+    "Nom": "Agence de Bouhraoua [Yalidine]"
+  },
+  {
+    "Wilaya": "Relizane",
+    "Nom": "Agence de Relizane [Yalidine]"
+  },
+  {
+    "Wilaya": "Timimoun",
+    "Nom": "Agence de Timimoun [Yalidine]"
+  },
+  {
+    "Wilaya": "Ouled Djellal",
+    "Nom": "Agence de Ouled Djellal [Yalidine]"
+  },
+  {
+    "Wilaya": "In Salah",
+    "Nom": "Agence de In Salah [Yalidine]"
+  },
+  {
+    "Wilaya": "Touggourt",
+    "Nom": "Agence de Touggourt [Yalidine]"
+  },
+  {
+    "Wilaya": "Djanet",
+    "Nom": "Agence de Djanet [Guepex]"
+  },
+  {
+    "Wilaya": "El M'Ghair",
+    "Nom": "Agence de Djamaa [Guepex]"
+  },
+  {
+    "Wilaya": "El M'Ghair",
+    "Nom": "Agence de El M'Ghair [Yalidine]"
+  },
+  {
+    "Wilaya": "El Menia",
+    "Nom": "Agence de El Menia [Yalidine]"
+  }
+]
