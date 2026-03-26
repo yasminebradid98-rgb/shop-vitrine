@@ -38,6 +38,7 @@ if (selectedCategory === 'hoodie') {
     finalColors = dbColors.filter((c: string) => hoodieList.includes(c));
 } else if (selectedCategory === 'sweater') {
     finalColors = dbColors.filter((c: string) => sweaterList.includes(c));
+
 } else {
     // Par défaut (t-shirt ou vide), on n'affiche QUE la liste tshirtList
     finalColors = dbColors.filter((c: string) => tshirtList.includes(c));
@@ -51,7 +52,14 @@ if (selectedCategory === 'hoodie') {
           {['tshirt', 'hoodie', 'sweater'].map((cat) => (
             <button 
               key={cat} 
-              onClick={() => onCategorySelect(cat)} 
+              onClick={() => {
+                // 1. On change la catégorie
+                onCategorySelect(cat);
+                
+                // 2. IMPORTANT : On force une couleur qui existe dans toutes les catégories
+                // pour éviter d'afficher un T-shirt par erreur
+                onColorSelect("Blanc"); 
+              }} 
               className={`px-4 py-2 border-2 rounded-lg text-sm uppercase font-bold transition-all 
               ${selectedCategory === cat ? 'bg-black text-white border-black' : 'border-gray-200 text-gray-500'}`}
             >
