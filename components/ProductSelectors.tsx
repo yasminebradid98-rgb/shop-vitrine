@@ -52,19 +52,7 @@ if (selectedCategory === 'hoodie') {
           {['tshirt', 'hoodie', 'sweater'].map((cat) => (
             <button 
               key={cat} 
-              onClick={() => {
-                // 1. On change la catégorie
-                onCategorySelect(cat);
-                
-                // 2. On définit la couleur par défaut SPECIFIQUE à chaque modèle
-                if (cat === 'hoodie') {
-                  onColorSelect("Blanc"); // Affiche le Hoodie Blanc
-                } else if (cat === 'sweater') {
-                  onColorSelect("Noir");  // Affiche le Sweater Noir
-                } else {
-                  onColorSelect("Noir");  // Affiche le T-shirt Noir
-                }
-              }} 
+              onClick={() => onCategorySelect(cat)} 
               className={`px-4 py-2 border-2 rounded-lg text-sm uppercase font-bold transition-all 
               ${selectedCategory === cat ? 'bg-black text-white border-black' : 'border-gray-200 text-gray-500'}`}
             >
