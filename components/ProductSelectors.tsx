@@ -56,9 +56,14 @@ if (selectedCategory === 'hoodie') {
                 // 1. On change la catégorie
                 onCategorySelect(cat);
                 
-                // 2. IMPORTANT : On force une couleur qui existe dans toutes les catégories
-                // pour éviter d'afficher un T-shirt par erreur
-                onColorSelect("Blanc"); 
+                // 2. On définit la couleur par défaut SPECIFIQUE à chaque modèle
+                if (cat === 'hoodie') {
+                  onColorSelect("Blanc"); // Affiche le Hoodie Blanc
+                } else if (cat === 'sweater') {
+                  onColorSelect("Noir");  // Affiche le Sweater Noir
+                } else {
+                  onColorSelect("Noir");  // Affiche le T-shirt Noir
+                }
               }} 
               className={`px-4 py-2 border-2 rounded-lg text-sm uppercase font-bold transition-all 
               ${selectedCategory === cat ? 'bg-black text-white border-black' : 'border-gray-200 text-gray-500'}`}
