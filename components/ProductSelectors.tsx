@@ -35,11 +35,9 @@ if (selectedCategory === 'hoodie') {
     finalColors = dbColors.filter((c: string) => hoodieList.includes(c));
 } else if (selectedCategory === 'sweater') {
     finalColors = dbColors.filter((c: string) => sweaterList.includes(c));
-} else if (selectedCategory === 'tshirt') {
-    // On filtre aussi les t-shirts maintenant !
-    finalColors = dbColors.filter((c: string) => tshirtList.includes(c));
 } else {
-    finalColors = dbColors; 
+    // Par défaut (t-shirt ou vide), on n'affiche QUE la liste tshirtList
+    finalColors = dbColors.filter((c: string) => tshirtList.includes(c));
 }
   return (
     <div className="flex flex-col gap-6 w-full">
