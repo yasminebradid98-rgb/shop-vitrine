@@ -4,10 +4,11 @@ const colorMapping: { [key: string]: string } = {
   "Aubergine": "#4a0404", "Beige Clair": "#cfbeae", "Beige Foncé": "#c4a377",
   "Blanc": "#ffffff", "Bleu Ciel": "#84c2d7", "Bleu Nuit": "#0b0837",
   "Bleu Roi Foncé": "#211d96", "Bleu Vert": "#33bcbc", "Gris Clair": "#cfc9c9",
-  "Gris Foncé": "#828282", "Jaune Moutarde": "#dd9d21", "Marron": "#4e2e21",
-  "Noir": "#000000", "Rose Clair": "#d2afb1", "Rose Fuchsia": "#e5004f",
-  "Rouge": "#b71e1e", "Saumon": "#ea9c73", "Vert Bouteille": "#0e331a",
-  "Vert Kaki": "#6c5c3b", "Vert Passport": "#0e331a", "Violet": "#4c2f72"
+  "Gris Foncé": "#555555", "Jaune Moutarde": "#dd9d21", "Marron": "#4e2e21",
+  "Noir": "#000000", "Orange": "#ff6700", "Rose Clair": "#d2afb1", 
+  "Rose Fuchsia": "#e5004f", "Rouge": "#b71e1e", "Saumon": "#ea9c73", 
+  "Vert Bouteille": "#0e331a", "Vert Kaki": "#6c5c3b", "Vert Passport": "#0e331a", 
+  "Violet": "#4c2f72"
 };
 
 export default function ProductSelectors({ 
@@ -15,11 +16,16 @@ export default function ProductSelectors({
   onColorSelect, onSizeSelect, onCategorySelect, onOpenModal 
 }: any) {
 
-  // Listes de référence
-  const hoodieList = ["Blanc", "Gris Clair", "Noir", "Beige Clair"];
+  // Listes de référence mises à jour avec tes nouveaux liens Drive
+  const hoodieList = [
+    "Blanc", "Gris Clair", "Noir", "Beige Clair", "Bleu Ciel", 
+    "Bleu Nuit", "Jaune Moutarde", "Gris Foncé", "Saumon", 
+    "Rouge", "Vert Bouteille", "Violet"
+  ];
+  
   const sweaterList = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
 
-  // LOGIQUE DE FILTRAGE RADICALE
+  // LOGIQUE DE FILTRAGE
   let finalColors = [];
   const dbColors = product.colors || [];
 
@@ -28,7 +34,6 @@ export default function ProductSelectors({
   } else if (selectedCategory === 'sweater') {
     finalColors = dbColors.filter((c: string) => sweaterList.includes(c));
   } else {
-    // POUR LE TSHIRT : On ignore tout filtre, on prend TOUT ce qui vient de Neon
     finalColors = dbColors; 
   }
 
@@ -70,7 +75,7 @@ export default function ProductSelectors({
         </div>
       </div>
 
-      {/* RESTE DU CODE (Taille & Bouton Order) */}
+      {/* TAILLE */}
       <div>
         <h3 className="text-sm font-bold mb-3 uppercase text-gray-400">Taille</h3>
         <div className="flex flex-wrap gap-2">
