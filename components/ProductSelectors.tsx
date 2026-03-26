@@ -45,22 +45,22 @@ if (selectedCategory === 'hoodie') {
 }
   return (
     <div className="flex flex-col gap-6 w-full">
-      {/* BOUTONS DE CATÉGORIE */}
-      <div>
-        <h3 className="text-sm font-bold mb-3 uppercase text-gray-400">Modèle</h3>
-        <div className="flex flex-wrap gap-2">
-          {['tshirt', 'hoodie', 'sweater'].map((cat) => (
-            <button 
-              key={cat} 
-              onClick={() => onCategorySelect(cat)} 
-              className={`px-4 py-2 border-2 rounded-lg text-sm uppercase font-bold transition-all 
-              ${selectedCategory === cat ? 'bg-black text-white border-black' : 'border-gray-200 text-gray-500'}`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+    {/* BOUTONS DE CATÉGORIE */}
+    <div>
+      <h3 className="text-sm font-bold mb-3 uppercase text-gray-400">Modèle</h3>
+      <div className="flex flex-wrap gap-2">
+        {['tshirt', 'hoodie', 'sweater'].map((cat) => (
+          <button 
+            key={cat} 
+            onClick={() => onCategorySelect(cat)} // ON REVIENT AU SIMPLE CLIC
+            className={`px-4 py-2 border-2 rounded-lg text-sm uppercase font-bold transition-all 
+            ${selectedCategory === cat ? 'bg-black text-white border-black' : 'border-gray-200 text-gray-500'}`}
+          >
+            {cat}
+          </button>
+        ))}
       </div>
+    </div>
 
       {/* SÉLECTEUR DE COULEUR */}
       <div>
