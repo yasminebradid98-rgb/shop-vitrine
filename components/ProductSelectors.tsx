@@ -8,7 +8,7 @@ const colorMapping: { [key: string]: string } = {
   "Noir": "#000000", "Orange": "#ff6700", "Rose Clair": "#d2afb1", 
   "Rose Fuchsia": "#e5004f", "Rouge": "#b71e1e", "Saumon": "#ea9c73", 
   "Vert Bouteille": "#0e331a", "Vert Kaki": "#6c5c3b", "Vert Passport": "#0e331a", 
-  "Violet": "#4c2f72"
+  "Violet": "#4c2f72" ,"Jaune":"#ebd531ff" ,"Vert Roadz": "#063a2cff",
 };
 
 export default function ProductSelectors({ 
@@ -20,8 +20,8 @@ export default function ProductSelectors({
 // J'ai harmonisé les noms pour qu'ils matchent EXACTEMENT ton SQL et ton colorMapping
   const hoodieList = [
     "Blanc", "Gris Clair", "Bleu Ciel", 
-    "Bleu Nuit", "Jaune Moutarde", "Gris Foncé", "Orange", 
-    "Rouge", "Vert Bouteille", "Violet"
+    "Bleu Nuit", "Jaune", "Gris Foncé", "Orange", 
+    "Rouge", "Vert Roadz", "Violet"
   ];
   
   const sweaterList = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
