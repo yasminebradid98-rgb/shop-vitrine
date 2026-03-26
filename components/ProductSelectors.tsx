@@ -7,7 +7,7 @@ const colorMapping: { [key: string]: string } = {
   "Gris Foncé": "#555555", "Jaune Moutarde": "#dd9d21", "Marron": "#4e2e21",
   "Noir": "#000000", "Orange": "#ff6700", "Rose Clair": "#d2afb1", 
   "Rose Fuchsia": "#e5004f", "Rouge": "#b71e1e", "Saumon": "#ea9c73", 
-  "Vert Bouteille": "#1f482c", "Vert Kaki": "#6c5c3b", "Vert Passport": "#0e331a", 
+  "Vert Bouteille": "#34503dff", "Vert Kaki": "#6c5c3b", "Vert Passport": "#0e331a", 
   "Violet": "#4c2f72" ,"Jaune":"#ebd531" ,"Vert Roadz": "#063a2c"
 };
 
