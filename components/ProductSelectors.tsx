@@ -8,7 +8,7 @@ const colorMapping: { [key: string]: string } = {
   "Noir": "#000000", "Orange": "#ff6700", "Rose Clair": "#d2afb1", 
   "Rose Fuchsia": "#e5004f", "Rouge": "#b71e1e", "Saumon": "#ea9c73", 
   "Vert Bouteille": "#0e331a", "Vert Kaki": "#6c5c3b", "Vert Passport": "#0e331a", 
-  "Violet": "#4c2f72" ,"Jaune":"#ebd531ff" ,"Vert Roadz": "#063a2cff",
+  "Violet": "#4c2f72" ,"Jaune":"#ebd531" ,"Vert Roadz": "#063a2c"
 };
 
 export default function ProductSelectors({ 
