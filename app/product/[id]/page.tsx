@@ -19,28 +19,27 @@ const hoodieColors = ["Blanc", "Gris Clair", "Bleu Ciel", "Bleu Nuit", "Jaune", 
 const sweaterColors = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
 const tshirtColors = ["Noir", "Blanc", "Rouge", "Marron", "Saumon", "Violet", "Aubergine", "Bleu Ciel", "Bleu Nuit", "Bleu Vert", "Vert Kaki", "Gris Clair", "Rose Clair", "Beige Clair", "Gris Foncé", "Beige Foncé", "Rose Fuchsia", "Vert Passport", "Jaune Moutarde", "Vert Bouteille", "Bleu Roi Foncé"];
 
-  useEffect(() => {
-    async function fetchProduct() {
-      const { data, error } = await db.getProductById(id);
-      
-      if (data) { 
-        // Parsing sécurisé des données JSON de Neon
-        const colors = typeof data.colors === 'string' ? JSON.parse(data.colors) : data.colors;
-        const sizes = typeof data.sizes === 'string' ? JSON.parse(data.sizes) : data.sizes;
-        const images_json = typeof data.images_json === 'string' ? JSON.parse(data.images_json) : data.images_json;
-
-        setProduct({ ...data, colors, sizes, images_json }); 
-        
-        setDisplayImage(data.image_url); 
-        
-        if (colors && colors.length > 0) setSelectedColor(colors[0]);
-      } else if (error) {
-        console.error("Erreur de récupération Neon:", error);
-      }
-    }
+useEffect(() => {
+  async function fetchProduct() {
+    const { data, error } = await db.getProductById(id);
     
-    if (id) fetchProduct();
-  }, [id]);
+    if (data) { 
+      const colors = typeof data.colors === 'string' ? JSON.parse(data.colors) : data.colors;
+      const sizes = typeof data.sizes === 'string' ? JSON.parse(data.sizes) : data.sizes;
+      const images_json = typeof data.images_json === 'string' ? JSON.parse(data.images_json) : data.images_json;
+
+      setProduct({ ...data, colors, sizes, images_json }); 
+      
+      // FORCE l'image de ton design Drive au départ
+      setDisplayImage(data.image_url); 
+      
+      // TRÈS IMPORTANT : Ne pas mettre setSelectedColor(colors[0]) ici !
+      // On laisse selectedColor à null pour que l'image ne change pas toute seule.
+      setSelectedColor(null); 
+    }
+  }
+  if (id) fetchProduct();
+}, [id]);
 
   // Fonction pour changer l'image selon la couleur ET la catégorie
 const updateDisplayImage = (color: string, category: string, currentProduct: any) => {
@@ -94,6 +93,7 @@ const handleCategorySelection = (cat: 'tshirt' | 'hoodie' | 'sweater') => {
         
         {/* Colonne Gauche : Image */}
         <div className="sticky top-24">
+          {/* displayImage affichera ton lien Drive tant qu'on n'a pas cliqué sur une couleur */}
           <ProductImage src={displayImage} alt={product.name} />
         </div>
         
