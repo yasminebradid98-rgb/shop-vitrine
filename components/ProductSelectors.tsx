@@ -17,9 +17,10 @@ export default function ProductSelectors({
 }: any) {
 
   // Listes de référence mises à jour avec tes nouveaux liens Drive
+// J'ai harmonisé les noms pour qu'ils matchent EXACTEMENT ton SQL et ton colorMapping
   const hoodieList = [
-    "Blanc", "Gris Clair", "Noir", "Beige Clair", "Bleu Ciel", 
-    "Bleu Nuit", "Jaune Moutarde", "Gris Foncé", "Saumon", 
+    "Blanc", "Gris Clair", "Bleu Ciel", 
+    "Bleu Nuit", "Jaune Moutarde", "Gris Foncé", "Orange", 
     "Rouge", "Vert Bouteille", "Violet"
   ];
   
