@@ -17,27 +17,30 @@ export default function ProductSelectors({
 }: any) {
 
   // Listes de référence mises à jour avec tes nouveaux liens Drive
-// J'ai harmonisé les noms pour qu'ils matchent EXACTEMENT ton SQL et ton colorMapping
-  const hoodieList = [
-    "Blanc", "Gris Clair", "Bleu Ciel", 
-    "Bleu Nuit", "Jaune", "Gris Foncé", "Orange", 
-    "Rouge", "Vert Roadz", "Violet"
-  ];
-  
-  const sweaterList = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
+// 1. Crée la liste des vraies couleurs de tes T-shirts
+const tshirtList = [
+  "Noir", "Blanc", "Rouge", "Marron", "Saumon", "Violet", 
+  "Aubergine", "Bleu Ciel", "Bleu Nuit", "Bleu Vert", 
+  "Vert Kaki", "Gris Clair", "Rose Clair", "Beige Clair"
+];
 
-  // LOGIQUE DE FILTRAGE
-  let finalColors = [];
-  const dbColors = product.colors || [];
+const hoodieList = ["Blanc", "Gris Clair", "Bleu Ciel", "Bleu Nuit", "Jaune", "Gris Foncé", "Orange", "Rouge", "Vert Roadz", "Violet"];
+const sweaterList = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
 
-  if (selectedCategory === 'hoodie') {
+// 2. Modifie la logique de filtrage pour utiliser cette liste
+let finalColors = [];
+const dbColors = product.colors || [];
+
+if (selectedCategory === 'hoodie') {
     finalColors = dbColors.filter((c: string) => hoodieList.includes(c));
-  } else if (selectedCategory === 'sweater') {
+} else if (selectedCategory === 'sweater') {
     finalColors = dbColors.filter((c: string) => sweaterList.includes(c));
-  } else {
+} else if (selectedCategory === 'tshirt') {
+    // On filtre aussi les t-shirts maintenant !
+    finalColors = dbColors.filter((c: string) => tshirtList.includes(c));
+} else {
     finalColors = dbColors; 
-  }
-
+}
   return (
     <div className="flex flex-col gap-6 w-full">
       {/* BOUTONS DE CATÉGORIE */}
