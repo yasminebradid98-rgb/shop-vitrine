@@ -15,8 +15,9 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Configuration des listes de couleurs (doit être identique à ProductSelectors)
-  const hoodieColors = ["Blanc", "Gris Clair", "Noir", "Beige Clair"];
-  const sweaterColors = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
+const hoodieColors = ["Blanc", "Gris Clair", "Bleu Ciel", "Bleu Nuit", "Jaune", "Gris Foncé", "Orange", "Rouge", "Vert Roadz", "Violet"];
+const sweaterColors = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
+const tshirtColors = ["Noir", "Blanc", "Rouge", "Marron", "Saumon", "Violet", "Aubergine", "Bleu Ciel", "Bleu Nuit", "Bleu Vert", "Vert Kaki", "Gris Clair", "Rose Clair", "Beige Clair", "Gris Foncé", "Beige Foncé", "Rose Fuchsia", "Vert Passport", "Jaune Moutarde", "Vert Bouteille", "Bleu Roi Foncé"];
 
   useEffect(() => {
     async function fetchProduct() {
@@ -42,49 +43,50 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
   }, [id]);
 
   // Fonction pour changer l'image selon la couleur ET la catégorie
-  const updateDisplayImage = (color: string, category: string, currentProduct: any) => {
-    const images = currentProduct?.images_json;
-    if (!images) return;
+const updateDisplayImage = (color: string, category: string, currentProduct: any) => {
+  const images = currentProduct?.images_json;
+  if (!images) return;
 
-    let suffix = category === "hoodie" ? "_h" : category === "sweater" ? "_s" : "";
-    const key = `${color}${suffix}`;
+  let suffix = category === "hoodie" ? "_h" : category === "sweater" ? "_s" : "";
+  const key = `${color}${suffix}`;
 
-    // On cherche la clé spécifique (ex: Noir_s), sinon la couleur simple, sinon l'image par défaut
-    const newUrl = images[key] || images[color] || currentProduct.image_url;
-    console.log("--- DEBUG ROADZ ---");
-console.log("Clé cherchée :", key);
-console.log("Contenu de images_json :", images);
-console.log("URL trouvée :", images[key]);
-    setDisplayImage(newUrl);
-  };
+  // PRIORITÉ : 
+  // 1. La clé exacte (ex: Blanc_h)
+  // 2. Si c'est un tshirt, la couleur simple (ex: Noir)
+  // 3. Sinon, on ne change rien ou on met une image vide pour éviter le bug
+  const newUrl = images[key] || (category === "tshirt" ? images[color] : null) || currentProduct.image_url;
+  
+  setDisplayImage(newUrl);
+};
 
   const handleColorSelection = (color: string) => {
     setSelectedColor(color);
     updateDisplayImage(color, selectedCategory, product);
   };
 
-  const handleCategorySelection = (cat: 'tshirt' | 'hoodie' | 'sweater') => {
-    setSelectedCategory(cat);
+const handleCategorySelection = (cat: 'tshirt' | 'hoodie' | 'sweater') => {
+  setSelectedCategory(cat);
 
-    const allColors = product.colors || [];
-    let available: string[] = [];
+  const allColors = product.colors || [];
+  let available: string[] = [];
 
-    // Filtrage identique à l'affichage
-    if (cat === 'hoodie') {
-      available = allColors.filter((c: string) => hoodieColors.includes(c));
-    } else if (cat === 'sweater') {
-      available = allColors.filter((c: string) => sweaterColors.includes(c));
-    } else {
-      available = allColors;
-    }
+  if (cat === 'hoodie') {
+    available = allColors.filter((c: string) => hoodieColors.includes(c));
+  } else if (cat === 'sweater') {
+    available = allColors.filter((c: string) => sweaterColors.includes(c));
+  } else {
+    // ICI : On filtre aussi pour les t-shirts !
+    available = allColors.filter((c: string) => tshirtColors.includes(c));
+  }
 
-    if (available.length > 0) {
-      const nextColor = available[0];
-      setSelectedColor(nextColor);
-      // On force la mise à jour immédiate de l'image avec la nouvelle catégorie
-      updateDisplayImage(nextColor, cat, product);
-    }
-  };
+  if (available.length > 0) {
+    // On prend la première couleur de la liste filtrée
+    const nextColor = available[0];
+    setSelectedColor(nextColor);
+    // On force la mise à jour immédiate avec le bon suffixe (_h ou _s)
+    updateDisplayImage(nextColor, cat, product);
+  }
+};
 
   if (!product) return <div className="p-20 text-center text-gray-500 font-bold uppercase tracking-widest">Chargement Roadz...</div>;
 
