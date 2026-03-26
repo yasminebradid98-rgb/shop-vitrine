@@ -18,10 +18,13 @@ export default function ProductSelectors({
 
   // Listes de référence mises à jour avec tes nouveaux liens Drive
 // 1. Crée la liste des vraies couleurs de tes T-shirts
+// 1. Ta liste COMPLÈTE de T-shirts (21 couleurs)
 const tshirtList = [
   "Noir", "Blanc", "Rouge", "Marron", "Saumon", "Violet", 
   "Aubergine", "Bleu Ciel", "Bleu Nuit", "Bleu Vert", 
-  "Vert Kaki", "Gris Clair", "Rose Clair", "Beige Clair"
+  "Vert Kaki", "Gris Clair", "Rose Clair", "Beige Clair",
+  "Gris Foncé", "Beige Foncé", "Rose Fuchsia", "Vert Passport",
+  "Jaune Moutarde", "Vert Bouteille", "Bleu Roi Foncé"
 ];
 
 const hoodieList = ["Blanc", "Gris Clair", "Bleu Ciel", "Bleu Nuit", "Jaune", "Gris Foncé", "Orange", "Rouge", "Vert Roadz", "Violet"];
