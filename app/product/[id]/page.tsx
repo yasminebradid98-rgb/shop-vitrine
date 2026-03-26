@@ -68,24 +68,22 @@ const handleCategorySelection = (cat: 'tshirt' | 'hoodie' | 'sweater') => {
   setSelectedCategory(cat);
 
   const allColors = product.colors || [];
-  let available: string[] = [];
+  let nextColor = "";
 
+  // 1. On définit la couleur par défaut selon le bouton cliqué
   if (cat === 'hoodie') {
-    available = allColors.filter((c: string) => hoodieColors.includes(c));
+    nextColor = "Blanc"; // Force le Blanc pour le Hoodie
   } else if (cat === 'sweater') {
-    available = allColors.filter((c: string) => sweaterColors.includes(c));
+    nextColor = "Blanc"; // Force le Blanc pour le Sweater
   } else {
-    // ICI : On filtre aussi pour les t-shirts !
-    available = allColors.filter((c: string) => tshirtColors.includes(c));
+    nextColor = "Noir";  // Force le Noir pour le T-shirt
   }
 
-  if (available.length > 0) {
-    // On prend la première couleur de la liste filtrée
-    const nextColor = available[0];
-    setSelectedColor(nextColor);
-    // On force la mise à jour immédiate avec le bon suffixe (_h ou _s)
-    updateDisplayImage(nextColor, cat, product);
-  }
+  // 2. On met à jour l'état de la couleur
+  setSelectedColor(nextColor);
+
+  // 3. On force la mise à jour de l'image IMMÉDIATEMENT
+  updateDisplayImage(nextColor, cat, product);
 };
 
   if (!product) return <div className="p-20 text-center text-gray-500 font-bold uppercase tracking-widest">Chargement Roadz...</div>;
