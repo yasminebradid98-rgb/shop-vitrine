@@ -1,6 +1,6 @@
 import { db } from '@/lib/db';
 import Link from 'next/link';
-export const revalidate = 0; // Cela désactive le cache pour cette page
+
 export default async function Home() {
   // Récupération des produits depuis Neon
   const { data: products, error } = await db.getAllProducts();
