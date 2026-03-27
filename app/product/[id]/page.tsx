@@ -31,19 +31,19 @@ if (data) {
 
   setProduct({ ...data, colors, sizes, images_json }); 
 
-      // --- LA LOGIQUE POUR AFFICHER LE T-SHIRT NOIR EN PREMIER ---
-      if (colors && colors.length > 0) {
-        const firstColor = colors[0]; // C'est "Noir"
-        setSelectedColor(firstColor);
+    // --- LA LOGIQUE POUR AFFICHER LE T-SHIRT NOIR EN PREMIER ---
+    if (colors && colors.length > 0) {
+      const firstColor = colors[0]; // C'est "Noir"
+      setSelectedColor(firstColor);
 
-        // On cherche l'image du Noir dans le JSON d'abord !
-        // Si images_json["Noir"] existe, on l'affiche. Sinon, on prend l'image_url globale.
-        const firstImage = images_json[firstColor] || data.image_url;
-        setDisplayImage(firstImage);
-      } else {
-        setDisplayImage(data.image_url);
-      }
-    }else if (error) {
+      // On cherche l'image du Noir dans le JSON d'abord !
+      // Si images_json["Noir"] existe, on l'affiche. Sinon, on prend l'image_url globale.
+      const firstImage = images_json[firstColor] || data.image_url;
+      setDisplayImage(firstImage);
+    } else {
+      setDisplayImage(data.image_url);
+    }
+  }else if (error) {
         console.error("Erreur de récupération Neon:", error);
       }
     }
