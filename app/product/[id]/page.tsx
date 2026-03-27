@@ -19,36 +19,38 @@ const hoodieColors = ["Blanc", "Gris Clair", "Bleu Ciel", "Bleu Nuit", "Jaune", 
 const sweaterColors = ["Blanc", "Bleu Nuit", "Beige Clair", "Gris Clair", "Marron", "Noir", "Vert Passport"];
 const tshirtColors = ["Noir", "Blanc", "Rouge", "Marron", "Saumon", "Violet", "Aubergine", "Bleu Ciel", "Bleu Nuit", "Bleu Vert", "Vert Kaki", "Gris Clair", "Rose Clair", "Beige Clair", "Gris Foncé", "Beige Foncé", "Rose Fuchsia", "Vert Passport", "Jaune Moutarde", "Vert Bouteille", "Bleu Roi Foncé"];
 
-useEffect(() => {
-    async function fetchProduct() {
-      const { data, error } = await db.getProductById(id);
-      
-      if (data) { 
-        const colors = typeof data.colors === 'string' ? JSON.parse(data.colors) : data.colors;
-        const sizes = typeof data.sizes === 'string' ? JSON.parse(data.sizes) : data.sizes;
-        const images_json = typeof data.images_json === 'string' ? JSON.parse(data.images_json) : data.images_json;
+  useEffect(() => {
+    async function fetchProduct() {
+      const { data, error } = await db.getProductById(id);
+      
+if (data) { 
+  // Parsing des données
+  const colors = typeof data.colors === 'string' ? JSON.parse(data.colors) : data.colors;
+  const sizes = typeof data.sizes === 'string' ? JSON.parse(data.sizes) : data.sizes;
+  const images_json = typeof data.images_json === 'string' ? JSON.parse(data.images_json) : data.images_json;
 
-        const currentProduct = { ...data, colors, sizes, images_json };
-        setProduct(currentProduct); 
-        
-        // --- LOGIQUE MODIFIÉE ICI ---
-        if (colors && colors.length > 0) {
-          const firstColor = colors[0]; // "Noir" par exemple
-          setSelectedColor(firstColor);
-          
-          // Au lieu de data.image_url, on cherche l'image de la première couleur
-          const firstImage = images_json[firstColor] || data.image_url;
-          setDisplayImage(firstImage);
-        } else {
-          setDisplayImage(data.image_url); 
-        }
-      } else if (error) {
-        console.error("Erreur de récupération Neon:", error);
-      }
-    }
-    
-    if (id) fetchProduct();
-  }, [id]);
+  setProduct({ ...data, colors, sizes, images_json }); 
+
+      // --- LA LOGIQUE POUR AFFICHER LE T-SHIRT NOIR EN PREMIER ---
+      if (colors && colors.length > 0) {
+        const firstColor = colors[0]; // C'est "Noir"
+        setSelectedColor(firstColor);
+
+        // On cherche l'image du Noir dans le JSON d'abord !
+        // Si images_json["Noir"] existe, on l'affiche. Sinon, on prend l'image_url globale.
+        const firstImage = images_json[firstColor] || data.image_url;
+        setDisplayImage(firstImage);
+      } else {
+        setDisplayImage(data.image_url);
+      }
+    }else if (error) {
+        console.error("Erreur de récupération Neon:", error);
+      }
+    }
+    
+    if (id) fetchProduct();
+  }, [id]);
+
   // Fonction pour changer l'image selon la couleur ET la catégorie
 const updateDisplayImage = (color: string, category: string, currentProduct: any) => {
   const images = currentProduct?.images_json;
